@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn login </title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f2ef;
+            margin: 0;
+            padding: 0;
+        }
+        
+        </div>
+        /* Top Navigation */
+        
+        .navbar {
+            background-color: #0a66c2;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .navbar a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Login Box */
+        
+        .login-box {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        .profile,
+        .posts,
+        .messages {
+            background: white;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile img {
+            width: 80px;
+            border-radius: 50%;
+        }
+        
+        .profile h2 {
+            margin: 10px 0 0;
+        }
+        
+        .post {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        
+        .message {
+            background: #e9f5ff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        
+        .section-title {
+            color: #0a66c2;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        button {
+            background: #0a66c2;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            background: #004182;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>LinkedIn</h1>
+
+    </div>
+
+    <!-- Login Box -->
+    <div class="login-box">
+        <h2>Login</h2>
+        <input type="text" placeholder="Email or Phone" />
+        <input type="password" placeholder="Password" />
+        <button>Sign In</button>
+    </div>
+
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LinkedIn Mini Clone</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f3f2ef;
+                margin: 0;
+                padding: 0;
+            }
+            /* Top Navigation */
+            
+            .navbar {
+                background-color: #0a66c2;
+                color: white;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .navbar h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+            
+            .navbar a {
+                color: white;
+                margin-left: 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            /* Login Box */
+            
+            .login-box {
+                background: white;
+                width: 300px;
+                padding: 20px;
+                margin: 20px auto;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            .login-box input {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+            }
+            
+            .profile,
+            .posts,
+            .messages {
+                background: white;
+                width: 90%;
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            .profile img {
+                width: 80px;
+                border-radius: 50%;
+            }
+            
+            .profile h2 {
+                margin: 10px 0 0;
+            }
+            
+            .post {
+                margin-bottom: 15px;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+            }
+            
+            .message {
+                background: #e9f5ff;
+                margin: 5px 0;
+                padding: 10px;
+                border-radius: 8px;
+            }
+            
+            .section-title {
+                color: #0a66c2;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+            
+            button {
+                background: #0a66c2;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+            
+            button:hover {
+                background: #004182;
+            }
+        </style>
+    </head>
+
+
+
+    </html>
