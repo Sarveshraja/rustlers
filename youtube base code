@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>YouTube Clone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <h1>YouTube</h1>
+
+
+    <div>
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+
+
+    <div>
+        <h2>Recommended Videos</h2>
+
+        <div>
+            <img src="https://via.placeholder.com/200x120" alt="Video Thumbnail">
+            <p><strong>Video Title 1</strong></p>
+            <p>Channel Name • 1M views • 1 day ago</p>
+        </div>
+
+        <div>
+            <img src="https://via.placeholder.com/200x120" alt="Video Thumbnail">
+            <p><strong>Video Title 2</strong></p>
+            <p>Channel Name • 500K views • 3 days ago</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
