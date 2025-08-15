@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background-color: #fff;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .location {
+            display: flex;
+            align-items: center;
+        }
+        
+        .location-pin {
+            font-size: 20px;
+        }
+        
+        .location-text {
+            margin-left: 8px;
+        }
+        
+        .location-text .home {
+            font-weight: bold;
+            color: #e91e63;
+        }
+        
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .profile-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+        
+        .wallet {
+            font-size: 20px;
+        }
+        
+        .initial {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: gold;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+            line-height: 32px;
+        }
+        
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: 10px 16px;
+        }
+        
+        .search-bar input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        
+        .mic {
+            font-size: 20px;
+        }
+        
+        .veg-mode {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        
+        .veg-mode span {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            background-color: #ccc;
+            border-radius: 20px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        
+        input:checked+.slider {
+            background-color: #4caf50;
+        }
+        
+        input:checked+.slider:before {
+            transform: translateX(20px);
+        }
+        
+        .gold-banner {
+            background: #fff7e0;
+            padding: 12px;
+            margin-top: 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .gold-banner .crown {
+            font-size: 20px;
+        }
+        
+        .explore-more {
+            margin-top: 24px;
+        }
+        
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
+        .card {
+            width: 22%;
+            text-align: center;
+        }
+        
+        .card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="location">
+            <span class="location-pin">📍</span>
+            <div class="location-text">
+                <span class="home">Home ⌄</span>
+                <p>kambar illam main gate, College ...</p>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="https://i.imgur.com/MpSRJtL.jpg" class="profile-icon" alt="Profile" />
+            <span class="wallet">💰</span>
+            <span class="initial">N</span>
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div class="search-bar">
+        <input type="text" placeholder="Restaurant name or a dish..." />
+        <span class="mic">🎤</span>
+    </div>
+
+    <!-- Veg Mode -->
+    <div class="veg-mode">
+        <span>VEG MODE</span>
+        <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    </div>
+
+    <!-- Banner -->
+    <div class="gold-banner">
+        <span class="crown">👑</span>
+        <p>Gold FREE delivery extended to 10 km at your current location. <a href="#">Know more ></a></p>
+    </div>
+
+    <!-- Explore More -->
+    <div class="explore-more">
+        <h3>EXPLORE MORE</h3>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2803/2803750.png" alt="Food on train" />
+                <p>Food on train</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Collections" />
+                <p>Collections</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" alt="Gift cards" />
+                <p>Gift cards</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="Healthy" />
+                <p>Healthy</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

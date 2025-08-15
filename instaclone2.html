@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Instagram Front-end Clone (Basic)</title>
+    <title>Instagram</title>
+    <link rel="icon" type="image/png" href="https://yt3.googleusercontent.com/_IpWH6oQFLFiOeapE-R28xNySDGGAzC9gkquxdMkfdHXKjz50QdBod3xg26Gv3a3uQocNkUUiQ=s900-c-k-c0x00ffffff-no-rj">
+
+
     <style>
         /* Simple reset */
         
@@ -75,7 +78,7 @@
         
         .stories {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             padding: 12px;
             background: #fff;
             border: 1px solid #e9e9e9;
@@ -100,7 +103,8 @@
             font-size: 12px;
             margin-top: 6px
         }
-        /* Post card */
+        /* Post card
+        */
         
         .post {
             background: #fff;
@@ -239,7 +243,7 @@
 <body>
     <header class="nav">
         <div class="left">
-            <div class="logo">Instagramam</div>
+            <div class="logo">Instagram</div>
         </div>
         <div class="center">
             <div class="search">Search</div>
@@ -257,101 +261,116 @@
         <section class="feed">
 
             <!-- Stories -->
+
             <div class="stories" id="stories">
-                <div class="story"><img src="https://picsum.photos/seed/1/200" alt="s1">
-                    <p>you</p>
+                <div class="story ">
+                    <a href="https://www.instagram.com/stories/just_raja_sr/"> <img src="https://picsum.photos/79 " alt="story "> </a>
+                    <p>sarvesh_raja</p>
+
                 </div>
-                <div class="story"><img src="https://picsum.photos/seed/2/200" alt="s2">
-                    <p>alex</p>
+                <div class="story">
+                    <a href="https://www.instagram.com/stories/x_k_a_l_a_i_x/"> <img src=" https://picsum.photos/60 " alt="story "></a>
+                    <p>x_k_a_l_a_i_x</p>
                 </div>
-                <div class="story"><img src="https://picsum.photos/seed/3/200" alt="s3">
-                    <p>maya</p>
+
+                <div class="story ">
+                    <a href="https://www.instagram.com/stories/pragaz__18/3695871149098812819/"> <img src="https://picsum.photos/63 " alt="story "> </a>
+                    <p>pragaz__18</p>
                 </div>
-                <div class="story"><img src="https://picsum.photos/seed/4/200" alt="s4">
-                    <p>ravi</p>
+
+                <div class="story ">
+                    <a href="https://www.instagram.com/stories/santhoxh_s/3695466489946967671/"> <img src="https://picsum.photos/67 " alt="story "> </a>
+                    <p>siva_mani</p>
                 </div>
-                <div class="story"><img src="https://picsum.photos/seed/5/200" alt="s5">
-                    <p>sam</p>
+                <div class="story ">
+                    <a href="https://www.instagram.com/stories/sarvika_thirumurugan/3695302493460106337/"> <img src="https://picsum.photos/96 " alt="story "> </a>
+                    <p>sarvika</p>
+
                 </div>
-                <div class="story"><img src="https://picsum.photos/seed/6/200" alt="s6">
-                    <p>lina</p>
+                <div class="story ">
+                    <a href="https://www.instagram.com/stories/civil_bhai_/"> <img src="https://picsum.photos/87 " alt="story "> </a>
+                    <p>civil_bhai_</p>
                 </div>
             </div>
 
             <!-- Post 1 -->
-            <article class="post" data-post-id="1">
-                <div class="post-header">
-                    <img class="avatar" src="https://picsum.photos/seed/a1/200" alt="avatar">
+            <article class="post " data-post-id="1 ">
+                <div class="post-header ">
+                    <img class="avatar " src="https://picsum.photos/seed/a1/200 " alt="avatar ">
                     <div>
-                        <div class="author">sarvesh_raja</div>
-                        <div style="font-size:12px;color:#8e8e8e">Trichy • 2h</div>
+                        <div class="author ">sarvesh_raja</div>
+                        <div style="font-size:12px;color:#8e8e8e ">Trichy • 2h</div>
                     </div>
                 </div>
-                <img class="main" src="https://picsum.photos/seed/post1/1000/800" alt="post">
-                <div class="actions">
-                    <div class="left">
-                        <div class="icon-btn" data-action="like">♡</div>
-                        <div class="icon-btn" data-action="comment">💬</div>
-                        <div class="icon-btn" data-action="share">✈️</div>
+                <img class="main " src="https://picsum.photos/99 " alt="post ">
+                <div class="actions ">
+                    <div class="left ">
+                        <div class="icon-btn " data-action="like ">♡</div>
+                        <div class="icon-btn " data-action="comment ">💬</div>
+                        <div class="icon-btn " data-action="share ">✈️</div>
                     </div>
-                    <div class="icon-btn" data-action="save">🔖</div>
+                    <div class="icon-btn " data-action="save ">🔖</div>
                 </div>
-                <div class="likes">Liked by <span class="like-count">120</span> people</div>
-                <div class="caption"><strong>sarvesh_r</strong> Exploring the campus — loving the vibes.</div>
-                <div class="comment-row">
-                    <input placeholder="Add a comment..." aria-label="Add a comment">
-                    <button class="post-btn">Post</button>
+                <div class="likes ">Liked by <span class="like-count ">120</span> people</div>
+                <div class="caption "><strong>sarvesh_raja</strong> Exploring the campus — loving the vibes.</div>
+                <div class="comment-row ">
+                    <input placeholder="Add a comment... " aria-label="Add a comment ">
+                    <button class="post-btn ">Post</button>
                 </div>
             </article>
 
             <!-- Post 2 -->
-            <article class="post" data-post-id="2">
-                <div class="post-header">
-                    <img class="avatar" src="https://picsum.photos/seed/a2/200" alt="avatar">
+            <article class="post " data-post-id="2 ">
+                <div class="post-header ">
+                    <img class="avatar " src="https://picsum.photos/seed/a2/200 " alt="avatar ">
                     <div>
-                        <div class="author">tech_daily</div>
-                        <div style="font-size:12px;color:#8e8e8e">Chennai • 4h</div>
+                        <div class="author ">tech_daily</div>
+                        <div style="font-size:12px;color:#8e8e8e ">Chennai • 4h</div>
                     </div>
                 </div>
-                <img class="main" src="https://picsum.photos/seed/post2/1000/800" alt="post">
-                <div class="actions">
-                    <div class="left">
-                        <div class="icon-btn" data-action="like">♡</div>
-                        <div class="icon-btn" data-action="comment">💬</div>
-                        <div class="icon-btn" data-action="share">✈️</div>
+                <img class="main " src="https://picsum.photos/seed/post2/1000/800 " alt="post ">
+                <div class="actions ">
+                    <div class="left ">
+                        <div class="icon-btn " data-action="like ">♡</div>
+                        <div class="icon-btn " data-action="comment ">💬</div>
+                        <div class="icon-btn " data-action="share ">✈️</div>
                     </div>
-                    <div class="icon-btn" data-action="save">🔖</div>
+                    <div class="icon-btn " data-action="save ">🔖</div>
                 </div>
-                <div class="likes">Liked by <span class="like-count">2,345</span> people</div>
-                <div class="caption"><strong>tech_daily</strong> New gadget teardown — link in bio.</div>
-                <div class="comment-row">
-                    <input placeholder="Add a comment..." aria-label="Add a comment">
-                    <button class="post-btn">Post</button>
+                <div class="likes ">Liked by <span class="like-count ">2,345</span> people</div>
+                <div class="caption "><strong>tech_daily</strong> New gadget teardown — link in bio.</div>
+                <div class="comment-row ">
+                    <input placeholder="Add a comment... " aria-label="Add a comment ">
+                    <button class="post-btn ">Post</button>
                 </div>
             </article>
 
         </section>
 
-        <aside class="sidebar">
-            <div class="profile-card">
-                <img class="avatar" src="https://picsum.photos/seed/me/200" alt="me" style="width:56px;height:56px">
-                <div class="profile-info">
-                    <p>Sarvesh Raja</p>
-                    <small style="color:#8e8e8e">Sarvesh_R</small>
+        <aside class="sidebar ">
+            <div class="profile-card ">
+                <a href="https://www.instagram.com/"><img class=" avatar " src="images/icon.jpg " alt="me " style="width:56px;height:56px "></a>
+                <div class="profile-info ">
+                    <p>sarvesh_raja</p>
+                    <small style="color:#8e8e8e ">sarvesh_7</small>
                 </div>
             </div>
 
-            <div class="suggestions">
-                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <div class="suggestions ">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px ">
                     <strong>Suggestions For You</strong>
-                    <a href="#" style="font-size:13px;color:#3897f0;text-decoration:none">See All</a>
+                    <a href="# " style="font-size:13px;color:#3897f0;text-decoration:none ">See All</a>
                 </div>
-                <div class="suggestion">
-                    <div><img src="https://picsum.photos/seed/s1/80" style="width:38px;height:38px;border-radius:50%;object-fit:cover;margin-right:8px;vertical-align:middle"> <span style="font-weight:600">ajay_99</span></div><small>Follow</small></div>
-                <div class="suggestion">
-                    <div><img src="https://picsum.photos/seed/s2/80" style="width:38px;height:38px;border-radius:50%;object-fit:cover;margin-right:8px;vertical-align:middle"> <span style="font-weight:600">nisha.codes</span></div><small>Follow</small></div>
-                <div class="suggestion">
-                    <div><img src="https://picsum.photos/seed/s3/80" style="width:38px;height:38px;border-radius:50%;object-fit:cover;margin-right:8px;vertical-align:middle"> <span style="font-weight:600">bike.lovers</span></div><small>Follow</small></div>
+                <div class="suggestion ">
+                    <div>
+                        <a href="https://www.instagram.com/nj__off_20_413/"><img src=" https://picsum.photos/seed/s1/80 " style="width:38px;height:38px;border-radius:50%;object-fit:cover;margin-right:8px;vertical-align:middle "></a> <span style="font-weight:600 ">nj_off_20_413</span></div><small>Follow</small></div>
+                <div class="suggestion ">
+                    <div>
+                        <a href="https://www.instagram.com/umai_1507/"> <img src=" https://picsum.photos/seed/s2/80 " style="width:38px;height:38px;border-radius:50%;object-fit:cover;margin-right:8px;vertical-align:middle "> </a><span style="font-weight:600 ">umai_1507</span>
+                    </div><small>Follow</small></div>
+                <div class="suggestion ">
+                    <div>
+                        <a href="https://www.instagram.com/x_k_a_l_a_i_x/"><img src=" https://picsum.photos/seed/s3/80 " style="width:38px;height:38px;border-radius:50%;object-fit:cover;margin-right:8px;vertical-align:middle "> </a><span style="font-weight:600 ">x_k_a_l_a_i_x</span></div><small>Follow</small></div>
             </div>
 
         </aside>
@@ -359,40 +378,40 @@
 
     <script>
         // Basic interactivity: like toggle + post comment
-        document.querySelectorAll('.post').forEach(post => {
-            const likeBtn = post.querySelector('[data-action="like"]');
-            const likeCountEl = post.querySelector('.like-count');
+        document.querySelectorAll(' .post ').forEach(post => {
+            const likeBtn = post.querySelector('[data-action="like " ] ');
+            const likeCountEl = post.querySelector('.like-count ');
             let liked = false;
 
-            likeBtn.addEventListener('click', () => {
+            likeBtn.addEventListener('click ', () => {
                 liked = !liked;
-                likeBtn.textContent = liked ? '❤️' : '♡';
+                likeBtn.textContent = liked ? '❤️ ' : '♡ ';
 
                 // numeric parse (supports commas)
-                let n = parseInt(likeCountEl.textContent.replace(/,/g, '')) || 0;
+                let n = parseInt(likeCountEl.textContent.replace(/,/g, ' ')) || 0;
                 n = liked ? n + 1 : Math.max(0, n - 1);
                 likeCountEl.textContent = n.toLocaleString();
             });
 
             // comment posting (local only)
-            const input = post.querySelector('.comment-row input');
-            const btn = post.querySelector('.comment-row .post-btn');
-            btn.addEventListener('click', () => {
+            const input = post.querySelector('.comment-row input ');
+            const btn = post.querySelector('.comment-row .post-btn ');
+            btn.addEventListener('click ', () => {
                 const v = input.value.trim();
                 if (!v) return;
-                const caption = document.createElement('div');
-                caption.style.padding = '0 10px 8px';
+                const caption = document.createElement('div ');
+                caption.style.padding = '0 10px 8px ';
                 caption.innerHTML = `<strong>You</strong> ${escapeHtml(v)}`;
-                post.insertBefore(caption, post.querySelector('.comment-row'));
-                input.value = '';
+                post.insertBefore(caption, post.querySelector('.comment-row '));
+                input.value = ' ';
             });
         });
 
         function escapeHtml(text) {
-            return text.replace(/[&<>\"']/g, function(c) {
+            return text.replace(/[&<>\" ']/g, function(c) {
                 return {
-                    '&': '&amp;',
-                    '<': '&lt;',
+                    '& ': '&amp; ',
+                    '< ': '&lt; ',
                     '>': '&gt;',
                     '"': '&quot;',
                     "'": "&#39;"

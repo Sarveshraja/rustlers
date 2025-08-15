@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zomato Clone</title>
+    <img src="images/icon.jpg " alt="Profile Picture " />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .profile img {
+            width: 80px;
+            border-radius: 50%;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+        
+        header {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        header h1 {
+            font-size: 28px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        
+        .search-section {
+            background-color: #fcebea;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .search-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .search-bar input {
+            padding: 12px;
+            margin: 5px;
+            width: 250px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        
+        .search-bar button {
+            padding: 12px 20px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .categories,
+        .restaurants {
+            padding: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        
+        .category-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .category-card {
+            background-color: #ffe6e6;
+            padding: 20px;
+            width: 200px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .category-card:hover {
+            background-color: #ffcccc;
+        }
+        
+        .restaurant-card {
+            border: 10px solid #ddd;
+            padding: 100px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        
+        .img {
+            padding: 100px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .restaurant-card h3 {
+            margin-bottom: 5px;
+        }
+        
+        .restaurant-card p {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header>
+        <h1>Zomato</h1>
+        <nav>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Discover the best food & drinks in your city</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter your location">
+            <input type="text" placeholder="Search for restaurants or cuisines">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2 class="section-title">Popular Categories</h2>
+        <div class="category-list">
+            <div class="category-card">
+                <h3>🍔 Order Food Online</h3>
+                <p>Delivery at your doorstep</p>
+            </div>
+            <div class="category-card">
+                <h3>🍽️ Dining Out</h3>
+                <p>Explore curated places</p>
+            </div>
+            <div class="category-card">
+                <h3>🎉 Nightlife</h3>
+                <p>Live music, clubs & more</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section class="restaurants">
+        <h2 class="section-title">Top Restaurants Near You</h2>
+
+        <div class="restaurant-card">
+            <h3>Spicy Biryani House</h3>
+            <div class="img">
+                <a href="https://www.zomato.com/chhindwara/adil-hotel-chhindwara-locality/order">
+                    <img src="https://b.zmtcdn.com/data/pictures/8/19094738/96a4f90202ee50debb0fcffd027cb799_o2_featured_v2.jpg" alt="Thumbnail"> </a>
+                <p><strong>Cuisine:</strong> Indian, Biryani</p>
+                <p><strong>Rating:</strong> 4.5 ★</p>
+                <p><strong>Location:</strong> Anna Nagar, Chennai</p>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <h3>Pizza Delight</h3>
+            <a href="https://www.zomato.com/chhindwara/dominos-pizza-1-chhindwara-locality/order">
+                <img src="https://b.zmtcdn.com/data/pictures/2/20415942/51e2e8230a40752b7018f7367fa13dfa_o2_featured_v2.jpg?output-format=webp" alt="Thumbnail"></a>
+            <p><strong>Cuisine:</strong> Italian, Pizza</p>
+            <p><strong>Rating:</strong> 4.2 ★</p>
+            <p><strong>Location:</strong> T. Nagar, Chennai</p>
+        </div>
+
+        <div class="restaurant-card">
+            <h3>Chai Point</h3>
+            <p><strong>Cuisine:</strong> Beverages, Snacks</p>
+            <p><strong>Rating:</strong> 4.0 ★</p>
+            <p><strong>Location:</strong> Velachery, Chennai</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Zomato Clone – Created for Educational Purpose</p>
+        <p>Contact: support@zomatoclone.com</p>
+    </footer>
+
+</body>
+
+</html>
